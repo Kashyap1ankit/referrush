@@ -15,23 +15,29 @@ export default function NavigationMenuDemo() {
         <NavigationMenuItem>
           <NavigationMenuLink
             asChild
-            className="bg-primary-bg text-gray-400 font-secondary"
+            className="bg-primary-bg text-slate-300 font-secondary font-semibold hover:bg-zinc-900 hover:text-primary-text"
           >
             <a href="/docs">Pricing</a>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-primary-bg text-gray-400  font-secondary">
+          <NavigationMenuTrigger className="bg-primary-bg text-slate-300 font-secondary font-semibold hover:bg-zinc-900 hover:text-primary-text data-[state=open]:hover:bg-zinc-900 data-[state=open]:text-primary-text data-[state=open]:focus:bg-zinc-900 data-[state=open]:bg-zinc/50 focus:bg-zinc-900 focus:text-primary-text">
             Resources
           </NavigationMenuTrigger>
-          <NavigationMenuContent className="border-0">
-            <ul className="grid w-[200px] gap-4">
+          <NavigationMenuContent className="group-data-[viewport=false]/navigation-menu:border-dark-green ">
+            <ul className="grid w-[200px] p-2 bg-black">
               <li>
-                <NavigationMenuLink asChild>
-                  <a href="#">Blog</a>
+                <NavigationMenuLink
+                  asChild
+                  className="bg-primary-bg text-slate-300 font-secondary font-semibold hover:bg-zinc-900 hover:text-primary-text"
+                >
+                  <a href="/blog">Blog</a>
                 </NavigationMenuLink>
-                <NavigationMenuLink asChild>
-                  <a href="#">Documentation</a>
+                <NavigationMenuLink
+                  asChild
+                  className="bg-primary-bg text-slate-300 font-secondary font-semibold hover:bg-zinc-900 hover:text-primary-text mt-2"
+                >
+                  <a href="/docs">Documentation</a>
                 </NavigationMenuLink>
               </li>
             </ul>
@@ -39,16 +45,22 @@ export default function NavigationMenuDemo() {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-primary-bg text-gray-400  font-secondary">
+          <NavigationMenuTrigger className="bg-primary-bg text-slate-300 font-secondary font-semibold hover:bg-zinc-900 hover:text-primary-text data-[state=open]:hover:bg-zinc-900 data-[state=open]:text-primary-text data-[state=open]:focus:bg-zinc-900 data-[state=open]:bg-zinc/50 focus:bg-zinc-900 focus:text-primary-text">
             Free Tools
           </NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[200px] gap-4">
+          <NavigationMenuContent className="group-data-[viewport=false]/navigation-menu:border-dark-green ">
+            <ul className="grid w-[200px] p-2 bg-black">
               <li>
-                <NavigationMenuLink asChild>
+                <NavigationMenuLink
+                  asChild
+                  className="bg-primary-bg text-slate-300 font-secondary font-semibold hover:bg-zinc-900 hover:text-primary-text"
+                >
                   <a href="#">Shopify Theme Detector</a>
                 </NavigationMenuLink>
-                <NavigationMenuLink asChild>
+                <NavigationMenuLink
+                  asChild
+                  className="bg-primary-bg text-slate-300 font-secondary font-semibold hover:bg-zinc-900 hover:text-primary-text"
+                >
                   <a href="#">SEO score checker</a>
                 </NavigationMenuLink>
               </li>
@@ -57,13 +69,11 @@ export default function NavigationMenuDemo() {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <a
-              href="/docs"
-              className="bg-primary-bg text-gray-400 font-secondary "
-            >
-              About us
-            </a>
+          <NavigationMenuLink
+            asChild
+            className="bg-primary-bg text-slate-300 font-secondary font-semibold hover:bg-zinc-900 hover:text-primary-text"
+          >
+            <a href="/docs">About us</a>
           </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
