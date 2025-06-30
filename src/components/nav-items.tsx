@@ -15,13 +15,13 @@ export default function NavigationMenuDemo() {
         <NavigationMenuItem>
           <NavigationMenuLink
             asChild
-            className="bg-primary-bg text-slate-300 font-secondary font-semibold hover:bg-zinc-900 hover:text-primary-text"
+            className="bg-transparent text-slate-300 font-secondary font-semibold hover:bg-zinc-900 hover:text-primary-text"
           >
             <a href="/docs">Pricing</a>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-primary-bg text-slate-300 font-secondary font-semibold hover:bg-zinc-900 hover:text-primary-text data-[state=open]:hover:bg-zinc-900 data-[state=open]:text-primary-text data-[state=open]:focus:bg-zinc-900 data-[state=open]:bg-zinc/50 focus:bg-zinc-900 focus:text-primary-text">
+          <NavigationMenuTrigger className="bg-transparent text-slate-300 font-secondary font-semibold hover:bg-zinc-900 hover:text-primary-text data-[state=open]:hover:bg-zinc-900 data-[state=open]:text-primary-text data-[state=open]:focus:bg-zinc-900 data-[state=open]:bg-zinc/50 focus:bg-zinc-900 focus:text-primary-text">
             Resources
           </NavigationMenuTrigger>
           <NavigationMenuContent className="group-data-[viewport=false]/navigation-menu:border-dark-green ">
@@ -29,13 +29,13 @@ export default function NavigationMenuDemo() {
               <li>
                 <NavigationMenuLink
                   asChild
-                  className="bg-primary-bg text-slate-300 font-secondary font-semibold hover:bg-zinc-900 hover:text-primary-text"
+                  className="bg-transparent text-slate-300 font-secondary font-semibold hover:bg-zinc-900 hover:text-primary-text"
                 >
                   <a href="/blog">Blog</a>
                 </NavigationMenuLink>
                 <NavigationMenuLink
                   asChild
-                  className="bg-primary-bg text-slate-300 font-secondary font-semibold hover:bg-zinc-900 hover:text-primary-text mt-2"
+                  className="bg-transparent text-slate-300 font-secondary font-semibold hover:bg-zinc-900 hover:text-primary-text mt-2"
                 >
                   <a href="/docs">Documentation</a>
                 </NavigationMenuLink>
@@ -45,7 +45,7 @@ export default function NavigationMenuDemo() {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-primary-bg text-slate-300 font-secondary font-semibold hover:bg-zinc-900 hover:text-primary-text data-[state=open]:hover:bg-zinc-900 data-[state=open]:text-primary-text data-[state=open]:focus:bg-zinc-900 data-[state=open]:bg-zinc/50 focus:bg-zinc-900 focus:text-primary-text">
+          <NavigationMenuTrigger className="bg-transparent text-slate-300 font-secondary font-semibold hover:bg-zinc-900 hover:text-primary-text data-[state=open]:hover:bg-zinc-900 data-[state=open]:text-primary-text data-[state=open]:focus:bg-zinc-900 data-[state=open]:bg-zinc/50 focus:bg-zinc-900 focus:text-primary-text">
             Free Tools
           </NavigationMenuTrigger>
           <NavigationMenuContent className="group-data-[viewport=false]/navigation-menu:border-dark-green ">
@@ -53,13 +53,13 @@ export default function NavigationMenuDemo() {
               <li>
                 <NavigationMenuLink
                   asChild
-                  className="bg-primary-bg text-slate-300 font-secondary font-semibold hover:bg-zinc-900 hover:text-primary-text"
+                  className="bg-transparent text-slate-300 font-secondary font-semibold hover:bg-zinc-900 hover:text-primary-text"
                 >
                   <a href="#">Shopify Theme Detector</a>
                 </NavigationMenuLink>
                 <NavigationMenuLink
                   asChild
-                  className="bg-primary-bg text-slate-300 font-secondary font-semibold hover:bg-zinc-900 hover:text-primary-text"
+                  className="bg-transparent text-slate-300 font-secondary font-semibold hover:bg-zinc-900 hover:text-primary-text"
                 >
                   <a href="#">SEO score checker</a>
                 </NavigationMenuLink>
@@ -71,7 +71,7 @@ export default function NavigationMenuDemo() {
         <NavigationMenuItem>
           <NavigationMenuLink
             asChild
-            className="bg-primary-bg text-slate-300 font-secondary font-semibold hover:bg-zinc-900 hover:text-primary-text"
+            className="bg-transparent text-slate-300 font-secondary font-semibold hover:bg-zinc-900 hover:text-primary-text"
           >
             <a href="/docs">About us</a>
           </NavigationMenuLink>
