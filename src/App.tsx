@@ -1,4 +1,5 @@
 import HeroSection from "./components/hero-sections";
+import HowItWorks from "./components/how-it-works";
 import Navbar from "./components/navbar";
 import TrustedBy from "./components/trusted-by";
 
@@ -16,6 +17,7 @@ function App() {
         <div className="mt-28 md:mt-44 flex flex-col gap-32">
           <HeroSection />
           <TrustedBy />
+          <HowItWorks />
         </div>
       </div>
     </div>

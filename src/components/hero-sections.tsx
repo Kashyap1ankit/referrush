@@ -19,28 +19,24 @@ export default function HeroSection() {
     vidRef.current.play();
   }, [playVideo]);
   return (
-    <motion.div
-      className="relative"
-      initial={{
-        filter: "blur(10px)",
-      }}
-      animate={{
-        filter: "blur(0px)",
-      }}
-    >
+    <div className="relative">
       <motion.div
-        className="flex items-center gap-2 bg-btn-primary  p-2 rounded-md border border-dashed border-btn-secondary w-fit mx-auto mb-6"
+        className="flex items-center gap-2 bg-btn-primary  p-2 rounded-md border border-dashed border-btn-secondary w-fit mx-auto mb-6 opacity-95"
         initial={{
-          filter: "blur(10px)",
-          y: 30,
+          y: 50,
+          opacity: 0,
+          filter: "blur(5px)",
         }}
         animate={{
-          filter: "blur(0px)",
           y: 0,
+          opacity: 1,
+          filter: "blur(0px)",
         }}
         transition={{
-          duration: 1,
-          ease: "easeInOut",
+          duration: 0.5,
+          type: "spring",
+          damping: 10,
+          stiffness: 85,
         }}
       >
         <p className="text-md font-secondary font-semibold text-white">
@@ -52,17 +48,21 @@ export default function HeroSection() {
       <motion.p
         className="text-7xl text-white font-primary font-bold text-center text-white"
         initial={{
+          y: 50,
+          opacity: 0,
           filter: "blur(10px)",
-          y: 30,
         }}
         animate={{
-          filter: "blur(0px)",
           y: 0,
+          opacity: 1,
+          filter: "blur(0px)",
         }}
         transition={{
-          duration: 1,
-
-          ease: "easeInOut",
+          duration: 0.5,
+          type: "spring",
+          damping: 10,
+          stiffness: 85,
+          delay: 0.25,
         }}
       >
         Boost Sales with Automated, Omni Channel{" "}
@@ -74,18 +74,20 @@ export default function HeroSection() {
       <motion.p
         className="font-secondary text-zinc-400 font-semibold text-center w-3/4 mx-auto mt-6"
         initial={{
+          y: 50,
           opacity: 0,
           filter: "blur(10px)",
-          y: 30,
         }}
         animate={{
+          y: 0,
           opacity: 1,
           filter: "blur(0px)",
-          y: 0,
         }}
         transition={{
-          duration: 1,
-          ease: "easeInOut",
+          duration: 0.5,
+          type: "spring",
+          damping: 10,
+          stiffness: 85,
           delay: 0.5,
         }}
       >
@@ -98,19 +100,21 @@ export default function HeroSection() {
       <motion.div
         className="flex flex-col md:flex-row gap-12 justify-center mt-12"
         initial={{
+          y: 50,
           opacity: 0,
-          filter: "blur(10px)",
-          y: 30,
+          filter: "blur(5px)",
         }}
         animate={{
+          y: 0,
           opacity: 1,
           filter: "blur(0px)",
-          y: 0,
         }}
         transition={{
-          duration: 1,
-          ease: "easeInOut",
-          delay: 1,
+          duration: 0.5,
+          type: "spring",
+          damping: 10,
+          stiffness: 85,
+          delay: 0.75,
         }}
       >
         <Button
@@ -164,12 +168,12 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="mt-24 relative w-full h-fit [mask-image:linear-gradient(to_top,transparent,black_20%)] ">
+      <div className="mt-24 relative w-full h-fit [mask-image:linear-gradient(to_top,transparent,black_20%)] border border-zinc-800 rounded ">
         <video
           loop
           muted
           ref={vidRef}
-          className={`w-full h-auto object-cover rounded-2xl border border-zinc-800 ${
+          className={`w-full h-auto object-cover rounded-2xl  ${
             !playVideo ? "blur-xs" : ""
           }`}
         >
@@ -189,6 +193,6 @@ export default function HeroSection() {
           )}
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
