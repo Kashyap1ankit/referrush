@@ -1,6 +1,7 @@
 import HeroSection from "./components/hero-sections";
 import HowItWorks from "./components/how-it-works";
 import Navbar from "./components/navbar";
+import Testimonials from "./components/testimonials";
 import TrustedBy from "./components/trusted-by";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <HeroSection />
           <TrustedBy />
           <HowItWorks />
+          <Testimonials />
         </div>
       </div>
     </div>

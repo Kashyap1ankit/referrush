@@ -36,7 +36,7 @@ export default function HowItWorks() {
 
       <div className="flex flex-col gap-12 mt-12">
         <motion.div
-          className="flex justify-between gap-6 p-6 rounded-2xl border border-zinc-800"
+          className="flex justify-between gap-6 p-6 rounded-3xl border border-zinc-800 "
           initial={{
             y: 50,
             opacity: 0,
@@ -55,7 +55,7 @@ export default function HowItWorks() {
             once: true,
           }}
         >
-          <div className="flex flex-col gap-2 justify-between w-1/2 ">
+          <div className="flex flex-col gap-2 justify-between w-1/2  ">
             <div className="flex flex-col gap-6">
               <p className="font-primary text-2xl text-white font-bold">
                 1. Tap WhatsApp Sharing
@@ -67,17 +67,17 @@ export default function HowItWorks() {
               </p>
             </div>
 
-            <Button className="rounded-2xl font-secondary w-fit cursor-pointer ">
+            <Button className="rounded-2xl font-secondary w-fit cursor-pointer border border-zinc-700 ">
               Learn More
             </Button>
           </div>
-          <div className="bg-grid-bg p rounded-2xl w-1/2">
+          <div className="bg-grid-bg p rounded-2xl w-1/2 border border-zinc-800">
             <img src="/phone-2.png" className="w-52 mx-auto" />
           </div>
         </motion.div>
 
         <motion.div
-          className="flex flex-row-reverse justify-between gap-6 p-12 rounded-2xl border border-zinc-800 "
+          className="flex flex-row-reverse justify-between gap-6 p-12 rounded-3xl border border-zinc-800 "
           initial={{
             y: 50,
             opacity: 0,
@@ -102,22 +102,22 @@ export default function HowItWorks() {
                 2.Friend Accepts Gift
               </p>
               <p className="font-secondary text-md text-zinc-400 font-normal ">
-                The referred friend lands on a beautiful page, sees the offer
-                and make a purchase - boosting your sales
+                The referred friend lands on a beautifully designed page, sees
+                the offer, and makes a purchase — instantly boosting your sales.
               </p>
             </div>
 
-            <Button className="rounded-2xl font-secondary mt-12 w-fit cursor-pointer ">
+            <Button className="rounded-2xl font-secondary mt-12 w-fit cursor-pointer border border-zinc-700 ">
               Learn More
             </Button>
           </div>
-          <div className=" bg-grid-bg p rounded-2xl w-1/2">
+          <div className=" bg-grid-bg p rounded-2xl w-1/2 border border-zinc-800">
             <img src="/phone-2.png" className="w-52 mx-auto " />
           </div>
         </motion.div>
 
         <motion.div
-          className="flex justify-between gap-6 p-12 rounded-2xl border border-zinc-800 "
+          className="flex justify-between gap-6 p-12 rounded-3xl border border-zinc-800 "
           initial={{
             y: 50,
             opacity: 0,
@@ -142,16 +142,16 @@ export default function HowItWorks() {
                 3. Instant Rewards
               </p>
               <p className="font-secondary text-md text-zinc-400 font-normal ">
-                Once the friend buys, your customers gets rewarded- with store
-                credit , cashback or free products automatically
+                Once the friend makes a purchase, your customer is automatically
+                rewarded — with store credit, cashback, or free products.
               </p>
             </div>
 
-            <Button className="rounded-2xl font-secondary mt-12 w-fit cursor-pointer ">
+            <Button className="rounded-2xl font-secondary mt-12 w-fit cursor-pointer border border-zinc-700 ">
               Learn More
             </Button>
           </div>
-          <div className=" bg-grid-bg p rounded-2xl w-1/2">
+          <div className=" bg-grid-bg p rounded-2xl w-1/2 border border-zinc-800">
             <img src="/phone-2.png" className="w-52 mx-auto " />
           </div>
         </motion.div>

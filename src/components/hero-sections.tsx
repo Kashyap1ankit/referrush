@@ -21,7 +21,7 @@ export default function HeroSection() {
   return (
     <div className="relative">
       <motion.div
-        className="flex items-center gap-2 bg-btn-primary  p-2 rounded-md border border-dashed border-btn-secondary w-fit mx-auto mb-6 opacity-95"
+        className="flex items-center gap-2 bg-btn-primary  py-1 px-2 rounded-md border-1 border-dashed border-btn-secondary w-fit mx-auto mb-6 opacity-95"
         initial={{
           y: 50,
           opacity: 0,
@@ -39,10 +39,10 @@ export default function HeroSection() {
           stiffness: 85,
         }}
       >
-        <p className="text-md font-secondary font-semibold text-white">
+        <p className="text-sm font-secondary font-semibold text-white">
           Backed by{" "}
         </p>
-        <img src="/wtf.png" className=" w-10" />
+        <img src="/wtf.png" className=" w-8" />
       </motion.div>
 
       <motion.p
