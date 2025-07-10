@@ -1,5 +1,6 @@
 import HeroSection from "./components/hero-sections";
 import Navbar from "./components/navbar";
+import TrustedBy from "./components/trusted-by";
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
     >
       <div className="w-11/12 max-w-5xl mx-auto py-4 ">
         <Navbar />
-        <div className="mt-28 md:mt-44">
+        <div className="mt-28 md:mt-44 flex flex-col gap-32">
           <HeroSection />
+          <TrustedBy />
         </div>
       </div>
     </div>

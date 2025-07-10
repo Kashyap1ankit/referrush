@@ -164,7 +164,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="mt-24 relative w-full h-[40rem] [mask-image:linear-gradient(to_top,transparent,black_60%)] ">
+      <div className="mt-24 relative w-full h-fit [mask-image:linear-gradient(to_top,transparent,black_20%)] ">
         <video
           loop
           muted
