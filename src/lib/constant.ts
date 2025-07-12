@@ -68,3 +68,55 @@ export const slideData = [
     image: "/rhea.webp",
   },
 ];
+
+import { BsInstagram, BsTwitter } from "react-icons/bs";
+
+interface FooterLink {
+  title: string;
+  href: string;
+  icon?: React.ComponentType<{ className?: string }>;
+}
+
+interface FooterSection {
+  label: string;
+  links: FooterLink[];
+}
+
+export const footerLinks: FooterSection[] = [
+  {
+    label: "Products",
+    links: [
+      { title: "Shopify App", href: "https://apps.shopify.com/referrush" },
+      { title: "Pricing", href: "https://www.referrush.com/pricing" },
+    ],
+  },
+  {
+    label: "Company",
+    links: [
+      { title: "About Us", href: "/about" },
+      { title: "Privacy Policy", href: "/privacy" },
+      { title: "Terms of Services", href: "/terms" },
+    ],
+  },
+  {
+    label: "Resources",
+    links: [
+      {
+        title: "Documentation",
+        href: "https://docs.referrush.com/getting-started/introduction",
+      },
+      { title: "Blog", href: "https://www.referrush.com/blog" },
+    ],
+  },
+  {
+    label: "Social Links",
+    links: [
+      {
+        title: "Instagram",
+        href: "https://www.instagram.com/referrush",
+        icon: BsInstagram,
+      },
+      { title: "Twitter", href: "https://x.com/referrush", icon: BsTwitter },
+    ],
+  },
+];

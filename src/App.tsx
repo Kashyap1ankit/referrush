@@ -1,5 +1,5 @@
 import Faq from "./components/faq";
-import Footer from "./components/footer";
+import { Footer } from "./components/footer";
 import HeroSection from "./components/hero-sections";
 import HowItWorks from "./components/how-it-works";
 import Navbar from "./components/navbar";
