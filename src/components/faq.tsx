@@ -19,7 +19,7 @@ export default function Faq() {
       </div>
 
       <motion.p
-        className="bg-linear-to-r from-zinc-400 to-zinc-600 bg-clip-text text-transparent text-center font-primary font-bold text-5xl "
+        className="bg-linear-to-r from-zinc-400 to-zinc-600 bg-clip-text text-transparent text-center font-primary font-bold text-4xl md:text-5xl "
         initial={{
           y: 50,
           opacity: 0,
@@ -44,12 +44,12 @@ export default function Faq() {
       <Accordion
         type="single"
         collapsible
-        className="mt-12 flex flex-col gap-6 w-3/4 mx-auto"
+        className="mt-12 flex flex-col gap-6 w-full md:w-3/4 mx-auto"
       >
         {faqdata.map((e, i) => {
           return (
             <AccordionItem value={`item-${i}`}>
-              <AccordionTrigger className="text-white text-xl font-primary font-semibold">
+              <AccordionTrigger className="text-white text-lg md:text-xl font-primary font-semibold">
                 {e.question}
               </AccordionTrigger>
               <AccordionContent className="text-gray-300 font-secondary tracking-wide">

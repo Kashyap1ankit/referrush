@@ -42,7 +42,7 @@ function AccordionTrigger({
         {...props}
       >
         {children}
-        <ImCross className=" pointer-events-none size-12 shrink-0  transition-transform duration-300 text-white bg-gray-800 p-4 rounded-full" />
+        <ImCross className=" pointer-events-none size-10 md:size-12 shrink-0  transition-transform duration-300 text-white bg-gray-800 p-4 rounded-full" />
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   );

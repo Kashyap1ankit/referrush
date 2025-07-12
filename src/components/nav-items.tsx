@@ -5,13 +5,12 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 
 export default function NavigationMenuDemo() {
   return (
     <NavigationMenu viewport={false}>
-      <NavigationMenuList>
+      <NavigationMenuList className="flex flex-col sm:flex-row ">
         <NavigationMenuItem>
           <NavigationMenuLink
             asChild
@@ -25,7 +24,7 @@ export default function NavigationMenuDemo() {
             Resources
           </NavigationMenuTrigger>
           <NavigationMenuContent className="group-data-[viewport=false]/navigation-menu:border-dark-green ">
-            <ul className="grid w-[200px] p-2 bg-black">
+            <ul className="grid w-[200px] p-2 bg-black ">
               <li>
                 <NavigationMenuLink
                   asChild

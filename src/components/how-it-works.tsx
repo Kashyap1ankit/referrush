@@ -11,7 +11,7 @@ export default function HowItWorks() {
       </div>
 
       <motion.p
-        className="bg-linear-to-r from-zinc-400 to-zinc-600 bg-clip-text text-transparent text-center font-primary font-bold text-5xl "
+        className="bg-linear-to-r from-zinc-400 to-zinc-600 bg-clip-text text-transparent text-center font-primary font-bold text-4xl md:text-5xl "
         initial={{
           y: 50,
           opacity: 0,
