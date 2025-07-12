@@ -22,6 +22,7 @@ export default function TrustedBy() {
       viewport={{
         once: true,
       }}
+      className="w-11/12 max-w-5xl mx-auto"
     >
       <p className="text-center text-2xl font-primary text-zinc-400 font-semibold">
         Trusted by India's fastest-growing{" "}

@@ -13,7 +13,7 @@ function App() {
       }}
       className="min-h-screen"
     >
-      <div className="w-11/12 max-w-5xl mx-auto py-4 ">
+      <div className=" py-4 ">
         <Navbar />
         <div className="mt-28 md:mt-44 flex flex-col gap-32">
           <HeroSection />

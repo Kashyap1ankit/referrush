@@ -17,8 +17,8 @@ export default function Navbar() {
 
   return (
     <div
-      className={`fixed top-4 left-1/2 -translate-x-1/2 flex justify-between items-center rounded-lg w-full  p-2  z-999 border border-zinc-800 transition-all duration-300 ${
-        isScrolled ? " shadow-md bg-black/90 backdrop-md md:w-1/2" : "md:w-2/3"
+      className={`fixed top-4 md:left-1/2 md:-translate-x-1/2 flex justify-between items-center rounded-lg w-11/12  p-2  z-999 border border-zinc-800 transition-all duration-300 ${
+        isScrolled ? " shadow-md bg-black/90 backdrop-md lg:w-1/2" : "lg:w-2/3"
       }  `}
     >
       <div className="flex items-center gap-8">

@@ -1,27 +1,43 @@
 import { FaReadme } from "react-icons/fa6";
 import Carousel from "./ui/carousel";
+import { motion } from "motion/react";
 
 export default function Testimonials() {
   const slideData = [
     {
-      title: "Mystic Mountains",
-      button: "Explore Component",
-      src: "https://images.unsplash.com/photo-1494806812796-244fe51b774d?q=80&w=3534&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      review:
+        "Great product and amazing team! Have been using Referrush for almost 5 months and will recommend it to other business as well!Team is dedicated and very responsive. 10/10!",
+      position: "CEO, MyFrido",
+      name: "Ganesh Sonawane",
+      image: "/ganesh.webp",
     },
     {
-      title: "Urban Dreams",
-      button: "Explore Component",
-      src: "https://images.unsplash.com/photo-1518710843675-2540dd79065c?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      review:
+        "ReferRush is the easiest, highest quality, and most cost-effective referral program we've used. We love how our customers don't have to sign up and can refer friends in a single click! Also, it took us less than 5 minutes to set up and sales are coming in on auto-pilot",
+      position: "CEO, Sneads",
+      name: "Suyash Chavan",
+      image: "/suyash.webp",
     },
     {
-      title: "Neon Nights",
-      button: "Explore Component",
-      src: "https://images.unsplash.com/photo-1590041794748-2d8eb73a571c?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      review:
+        "I just tried out this new WhatsApp referral application, and I have to say it's amazing! It's super convenient and user-friendly. I love how easy it is for my contacts to refer their friends with just a few clicks.",
+      position: "CMO, Bathla",
+      name: "Dev Bathla",
+      image: "/dev.webp",
     },
     {
-      title: "Desert Whispers",
-      button: "Explore Component",
-      src: "https://images.unsplash.com/photo-1679420437432-80cfbf88986c?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      review:
+        "ReferRush is such an easy and cost-effective referral app to use. We love how it works— the simplicity of it, and the conversion has been awesome as well. It was an easy setup process & runs smoothly after that with basically zero interference required.",
+      position: "CEO, Kica Active, Nykaa Fashion",
+      name: "Aneesha Labroo",
+      image: "/aneesha.webp",
+    },
+    {
+      review:
+        "This Shopify plugin is so easy to use! I was onboarded within a day, and the support team was super helpful in setting it up and making sure our branding was right. They went the extra mile to make adjustments.",
+      position: "CEO, Tuckd",
+      name: "Rhea Mable David",
+      image: "/rhea.webp",
     },
   ];
 
@@ -34,9 +50,55 @@ export default function Testimonials() {
         </p>
       </div>
 
-      <div className="relative overflow-hidden w-full h-full py-20">
+      <motion.p
+        className="bg-linear-to-r from-zinc-400 to-zinc-600 bg-clip-text text-transparent text-center font-primary font-bold text-5xl "
+        initial={{
+          y: 50,
+          opacity: 0,
+        }}
+        whileInView={{
+          y: 0,
+          opacity: 1,
+        }}
+        transition={{
+          duration: 1,
+          type: "spring",
+          damping: 10,
+          stiffness: 85,
+        }}
+        viewport={{
+          once: true,
+        }}
+      >
+        Real Stories From{" "}
+        <span className="text-primary-text">Real People </span>
+      </motion.p>
+
+      <motion.div
+        className="relative overflow-hidden w-full h-full py-20 "
+        initial={{
+          y: 50,
+          opacity: 0,
+          filter: "blur(5px)",
+        }}
+        whileInView={{
+          y: 0,
+          opacity: 1,
+          filter: "blur(0px)",
+        }}
+        transition={{
+          duration: 1,
+          type: "spring",
+          damping: 10,
+          stiffness: 85,
+          delay: 0.25,
+        }}
+        viewport={{
+          once: true,
+        }}
+      >
         <Carousel slides={slideData} />
-      </div>
+      </motion.div>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 export default function HowItWorks() {
   return (
-    <div>
+    <div className="w-11/12 max-w-5xl mx-auto">
       <div className="flex items-center gap-2 bg-btn-primary  p-1 px-2 rounded-2xl w-fit mx-auto mb-6">
         <p className="text-xs font-secondary font-semibold text-white">
           How it works
@@ -36,7 +36,7 @@ export default function HowItWorks() {
 
       <div className="flex flex-col gap-12 mt-12">
         <motion.div
-          className="flex justify-between gap-6 p-6 rounded-3xl border border-zinc-800 "
+          className="flex flex-col md:flex-row justify-between gap-6 p-6 rounded-3xl border border-zinc-800 "
           initial={{
             y: 50,
             opacity: 0,
@@ -55,7 +55,7 @@ export default function HowItWorks() {
             once: true,
           }}
         >
-          <div className="flex flex-col gap-2 justify-between w-1/2  ">
+          <div className="flex flex-col gap-2 justify-betweenw-full w-full md:w-1/2  ">
             <div className="flex flex-col gap-6">
               <p className="font-primary text-2xl text-white font-bold">
                 1. Tap WhatsApp Sharing
@@ -71,13 +71,13 @@ export default function HowItWorks() {
               Learn More
             </Button>
           </div>
-          <div className="bg-grid-bg p rounded-2xl w-1/2 border border-zinc-800">
+          <div className="bg-grid-bg p rounded-2xl w-full md:w-1/2 border border-zinc-800">
             <img src="/phone-2.png" className="w-52 mx-auto" />
           </div>
         </motion.div>
 
         <motion.div
-          className="flex flex-row-reverse justify-between gap-6 p-12 rounded-3xl border border-zinc-800 "
+          className="flex  flex-col md:flex-row-reverse justify-between gap-6 p-12 rounded-3xl border border-zinc-800 "
           initial={{
             y: 50,
             opacity: 0,
@@ -96,7 +96,7 @@ export default function HowItWorks() {
             once: true,
           }}
         >
-          <div className="flex flex-col gap-6 flex flex-col gap-2 justify-between  w-1/2  ">
+          <div className="flex flex-col gap-6 flex flex-col gap-2 justify-between  w-full md:w-1/2  ">
             <div className="flex flex-col gap-6">
               <p className="font-primary text-2xl text-white font-bold">
                 2.Friend Accepts Gift
@@ -111,13 +111,13 @@ export default function HowItWorks() {
               Learn More
             </Button>
           </div>
-          <div className=" bg-grid-bg p rounded-2xl w-1/2 border border-zinc-800">
+          <div className=" bg-grid-bg p rounded-2xl w-full md:w-1/2 border border-zinc-800">
             <img src="/phone-2.png" className="w-52 mx-auto " />
           </div>
         </motion.div>
 
         <motion.div
-          className="flex justify-between gap-6 p-12 rounded-3xl border border-zinc-800 "
+          className="flex flex-col md:flex-row justify-between gap-6 p-12 rounded-3xl border border-zinc-800 "
           initial={{
             y: 50,
             opacity: 0,
@@ -136,7 +136,7 @@ export default function HowItWorks() {
             once: true,
           }}
         >
-          <div className="flex flex-col gap-6 justify-between w-1/2 ">
+          <div className="flex flex-col gap-6 justify-between w-full md:w-1/2 ">
             <div className="flex flex-col gap-6">
               <p className="font-primary text-2xl text-white font-bold">
                 3. Instant Rewards
@@ -151,7 +151,7 @@ export default function HowItWorks() {
               Learn More
             </Button>
           </div>
-          <div className=" bg-grid-bg p rounded-2xl w-1/2 border border-zinc-800">
+          <div className=" bg-grid-bg p rounded-2xl w-full md:w-1/2 border border-zinc-800">
             <img src="/phone-2.png" className="w-52 mx-auto " />
           </div>
         </motion.div>

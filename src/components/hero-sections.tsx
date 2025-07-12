@@ -19,7 +19,7 @@ export default function HeroSection() {
     vidRef.current.play();
   }, [playVideo]);
   return (
-    <div className="relative">
+    <div className="relative w-11/12 max-w-5xl mx-auto">
       <motion.div
         className="flex items-center gap-2 bg-btn-primary  py-1 px-2 rounded-md border-1 border-dashed border-btn-secondary w-fit mx-auto mb-6 opacity-95"
         initial={{
