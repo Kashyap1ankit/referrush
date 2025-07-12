@@ -1,3 +1,4 @@
+import Faq from "./components/faq";
 import HeroSection from "./components/hero-sections";
 import HowItWorks from "./components/how-it-works";
 import Navbar from "./components/navbar";
@@ -20,6 +21,7 @@ function App() {
           <TrustedBy />
           <HowItWorks />
           <Testimonials />
+          <Faq />
         </div>
       </div>
     </div>
