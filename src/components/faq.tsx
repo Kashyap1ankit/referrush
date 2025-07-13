@@ -48,7 +48,7 @@ export default function Faq() {
       >
         {faqdata.map((e, i) => {
           return (
-            <AccordionItem value={`item-${i}`}>
+            <AccordionItem key={i} value={`item-${i}`}>
               <AccordionTrigger className="text-white text-lg md:text-xl font-primary font-semibold">
                 {e.question}
               </AccordionTrigger>
