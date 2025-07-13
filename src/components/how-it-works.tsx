@@ -72,7 +72,7 @@ export default function HowItWorks() {
             </Button>
           </div>
           <div className="bg-grid-bg p rounded-2xl w-full md:w-1/2 border border-zinc-800">
-            <img src="/phone-2.png" className="w-52 mx-auto" />
+            <img src="/whatsapp.png" className="w-52 mx-auto" />
           </div>
         </motion.div>
 
@@ -112,7 +112,7 @@ export default function HowItWorks() {
             </Button>
           </div>
           <div className=" bg-grid-bg p rounded-2xl w-full md:w-1/2 border border-zinc-800">
-            <img src="/phone-2.png" className="w-52 mx-auto " />
+            <img src="/accept-gift.png" className=" mx-auto " />
           </div>
         </motion.div>
 
@@ -152,7 +152,7 @@ export default function HowItWorks() {
             </Button>
           </div>
           <div className=" bg-grid-bg p rounded-2xl w-full md:w-1/2 border border-zinc-800">
-            <img src="/phone-2.png" className="w-52 mx-auto " />
+            <img src="/payout.png" className=" mx-auto " />
           </div>
         </motion.div>
       </div>

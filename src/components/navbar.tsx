@@ -29,8 +29,8 @@ export default function Navbar() {
         isScrolled ? " shadow-md bg-black/90 backdrop-md lg:w-1/2" : "lg:w-2/3"
       }  `}
     >
-      <div className="flex items-center gap-8">
-        <img src="/logo.png" className="w-12 " />
+      <div className="flex items-center gap-0 md:gap-8">
+        <img src="/logo.png" className="w-10 md:w-12 " />
 
         <div className="hidden sm:block">
           <NavigationMenuDemo />
