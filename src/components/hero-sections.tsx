@@ -9,14 +9,16 @@ import { motion } from "motion/react";
 
 export default function HeroSection() {
   const [playVideo, setPlayVideo] = useState(false);
-  const vidRef = useRef(null);
+  const vidRef = useRef<HTMLVideoElement | null>(null);
 
   useEffect(() => {
-    if (!playVideo) {
-      vidRef.current.pause();
-      return;
+    if (vidRef.current) {
+      if (!playVideo) {
+        vidRef.current.pause();
+        return;
+      }
+      vidRef.current.play();
     }
-    vidRef.current.play();
   }, [playVideo]);
 
   return (
